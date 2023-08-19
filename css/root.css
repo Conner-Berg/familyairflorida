@@ -702,6 +702,9 @@
 		position: relative;
 		color: var(--bodyTextColorWhite);
 	}
+	#cs-navigation .cs-dropdown:hover {
+		cursor: pointer;
+	}
 	#cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
 		height: auto;
 		opacity: 1;
