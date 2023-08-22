@@ -1,0 +1,46 @@
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	:root {
+		--dark: #121212;
+		--medium: #282828;
+		--accent: #404040;
+	}
+	body.dark-mode {
+		background-color: var(--dark);
+	}
+	body.dark-mode p,
+	body.dark-mode li,
+	body.dark-mode h1,
+	body.dark-mode h2,
+	body.dark-mode h3,
+	body.dark-mode h4,
+	body.dark-mode h5,
+	body.dark-mode h6 {
+		color: #fff;
+	}
+	body.dark-mode .light {
+		display: none;
+	}
+	body.dark-mode .dark {
+		display: block !important;
+	}
+	body.dark-mode .cs-topper {
+		color: var(--primary);
+	}
+	body.dark-mode .cs-button-solid {
+		background-color: var(--primary);
+		transition: color 0.3s;
+	}
+	body.dark-mode .cs-button-solid:hover {
+		color: var(--primary);
+	}
+	body.dark-mode .cs-button-solid:before {
+		background-color: #fff;
+	}
+	.dark {
+		display: none;
+	}
+}

@@ -1,0 +1,173 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-288 {
+    /* centers button */
+    text-align: center;
+    /* 116px - 164px top */
+    /* 60px - 100px  bottom */
+    padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    position: relative;
+    background-color: #f7f7f7;
+  }
+  #hero-288 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-288 .cs-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-288 .cs-title {
+    /* 44px - 61px */
+    font-size: clamp(2.75rem, 5vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1em;
+    text-align: center;
+    margin: 0 auto 1rem;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #hero-288 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 33.75rem;
+    margin: 0;
+    /* 28px - 40px */
+    margin-bottom: clamp(1.75rem, 3.92vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #hero-288 .cs-stats-group {
+    max-width: 32.625rem;
+    margin: 0;
+    /* 40px - 98px */
+    margin-top: clamp(2.5rem, calc(7.3vw), 6.125rem);
+    /* 40px - 48px */
+    margin-bottom: clamp(2.5rem, 10vw, 3rem);
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* 20px - 40px */
+    column-gap: clamp(1.25rem, 5.9vw, 2.5rem);
+  }
+  #hero-288 .cs-item {
+    list-style: none;
+    width: auto;
+  }
+  #hero-288 .cs-number {
+    font-family: 'font2', Arial, monospace;
+    letter-spacing: .1em;
+    /* 25px - 49px */
+    font-size: clamp(1.5625rem, 3.8vw, 3.0625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: block;
+  }
+  #hero-288 .cs-desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2.1vw, 1rem);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+  #hero-288 .cs-picture {
+    width: 100%;
+    max-width: 36.5625rem;
+    /* 380px - 453px */
+    height: clamp(23.75rem, 59vw, 28.3215rem);
+    /* clips the img tag corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  #hero-288 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+  #hero-288 .cs-waves {
+    width: 100%;
+    height: 30%;
+    background-color: var(--secondaryDark);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  #hero-288 .cs-waves img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-288 {
+    text-align: left;
+  }
+  #hero-288 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 3.125rem;
+  }
+  #hero-288 .cs-content {
+    width: 45%;
+    /* prevents flex-box from squishing it */
+    flex: none;
+    align-items: flex-start;
+  }
+  #hero-288 .cs-title,
+  #hero-288 .cs-text {
+    text-align: left;
+  }
+  #hero-288 .cs-picture {
+    max-width: 39.375rem;
+    /* 623px - 814px */
+    height: clamp(38.9375rem, 60vw, 50.875rem);
+  }
+  #hero-288 .cs-waves {
+    height: 100%;
+    width: calc(49vw);
+    left: 50%;
+    margin-left: 12.5rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-288 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #hero-288 .cs-title,
+  body.dark-mode #hero-288 .cs-text,
+  body.dark-mode #hero-288 .cs-number,
+  body.dark-mode #hero-288 .cs-desc {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #hero-288 .cs-waves {
+    opacity: .5;
+  }
+}

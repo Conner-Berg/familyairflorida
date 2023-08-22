@@ -5,9 +5,9 @@
 @media only screen and (min-width: 0em) {
 	:root {
 		/* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
-		--primary: #6aa4d0;
+		--primary: #81a7d0;
 		--primaryLight: #001f3f;
-		--secondary: #182a54;
+		--secondary: #3b3477;
 		--secondaryLight: #d87d2b;
 		--secondaryDark: #0c152a;
 		--headerColor: #1a1a1a;
@@ -346,6 +346,13 @@
 		transform: scaleX(1);
 		transition-delay: 0.2s;
 	}
+	#cs-navigation.cs-active .cs-expanded {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+	#cs-navigation.cs-active .cs-expanded::-webkit-scrollbar {
+		display: none;
+	}
 	#cs-navigation.cs-active .cs-li {
 		transform: translateX(0);
 		opacity: 1;
@@ -404,7 +411,7 @@
 		/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 		object-fit: contain;
 		/* places the image to the left edge of the parent */
-		object-position: left;
+		object-position: center;
 	}
 	#cs-navigation .cs-item {
 		list-style: none;
@@ -1465,6 +1472,9 @@
 		height: auto;
 		margin-right: auto;
 		display: block;
+	}
+	#cs-footer-710 img {
+		filter: grayscale(1) brightness(1000%);
 	}
 	#cs-footer-710 .cs-logo img {
 		width: 100%;

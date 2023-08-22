@@ -1,0 +1,416 @@
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#reviews-607 {
+		padding: var(--sectionPadding);
+		background-color: #f7f7f7;
+	}
+	#reviews-607 .cs-container {
+		width: 100%;
+		/* changes to 1280px at tablet */
+		max-width: 34.375rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#reviews-607 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#reviews-607 .cs-title {
+		max-width: 25ch;
+	}
+	#reviews-607 .cs-card-group {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.25rem;
+	}
+	#reviews-607 .cs-item {
+		list-style: none;
+		width: 100%;
+		margin: 0;
+		/* 32px - 48px top & bottom */
+		/* 16px - 32px left & right */
+		padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+		/* makes padding not affect height and width */
+		box-sizing: border-box;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#reviews-607 .cs-icon {
+		/* 30px - 40px */
+		width: clamp(1.875rem, 4vw, 2.5rem);
+		height: auto;
+		margin: 0 0 2rem 0;
+		display: block;
+	}
+	#reviews-607 .cs-h3 {
+		/* 20px - 25px */
+		font-size: clamp(1.25rem, 4vw, 1.5625rem);
+		line-height: 1.2em;
+		font-weight: 700;
+		margin: 0 0 1.5rem 0;
+		color: var(--headerColor);
+	}
+	#reviews-607 .cs-item-text {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 4vw, 1rem);
+		line-height: 1.5em;
+		max-width: 24.25rem;
+		margin: 0 0 3rem 0;
+		color: var(--bodyTextColor);
+	}
+	#reviews-607 .cs-name {
+		font-size: 1.25rem;
+		line-height: 1.2em;
+		font-weight: 500;
+		margin: auto 0 0 0;
+		color: var(--headerColor);
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 0.5rem;
+		position: relative;
+	}
+	#reviews-607 .cs-name:before {
+		content: '';
+		width: 0.5rem;
+		height: 1px;
+		background: currentColor;
+		display: block;
+		position: relative;
+	}
+	.facebook-icon {
+		margin-left: 12px;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#reviews-607 .cs-container {
+		max-width: 80rem;
+	}
+	#reviews-607 .cs-card-group {
+		/* we went grid on tablet so that we can have an even spaced section with this design. Flexbox has a hard time making this type of design work with even gaps. */
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: stretch;
+	}
+	#reviews-607 .cs-item {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#reviews-607 .cs-card-group {
+		/* went back to flexbox for an easier transition to this horizontal layout. We don't have to re-target each cs-item to reset its grid positioning, we can just revert to flexbox and make the layout in less code and hassle */
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: center;
+	}
+	#reviews-607 .cs-item {
+		width: clamp(31.92%, 30vw, 32.28%);
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #reviews-607 {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	body.dark-mode #reviews-607 .cs-title,
+	body.dark-mode #reviews-607 .cs-text,
+	body.dark-mode #reviews-607 .cs-h3,
+	body.dark-mode #reviews-607 .cs-name,
+	body.dark-mode #reviews-607 .cs-item-text {
+		color: var(--bodyTextColorWhite);
+	}
+	body.dark-mode #reviews-607 .cs-text,
+	body.dark-mode #reviews-607 .cs-item-text {
+		opacity: 0.8;
+	}
+	body.dark-mode #reviews-607 .cs-item {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+	#cta {
+		position: relative;
+		padding: 3.125rem 0;
+	}
+	#cta:before {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: 0.7;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	#cta .container {
+		text-align: center;
+	}
+	#cta picture {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -2;
+		background-color: #000;
+	}
+	#cta picture img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		opacity: 0.6;
+	}
+	#cta .title {
+		font-weight: 900;
+		font-size: min(9vw, 3rem);
+		line-height: 1.20833333;
+		color: #fff;
+		position: relative;
+		margin-bottom: 2.25rem;
+		text-align: center;
+	}
+	#cta p {
+		color: #fff;
+		text-align: center;
+		opacity: 1;
+		margin: auto;
+		margin-bottom: 2.25rem;
+		width: 96%;
+		max-width: 37.375rem;
+	}
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+	#cta {
+		padding: 10.5rem 0;
+	}
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+	#cta {
+		position: relative;
+		margin-top: 6.25rem;
+	}
+	#cta:before {
+		display: none;
+	}
+	#cta:after {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 69.25rem;
+		width: 125rem;
+		background: url('..assets/images/cta-squares.svg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 1;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: -3;
+	}
+	#cta .container {
+		width: 90.0625%;
+		margin: auto;
+	}
+	#cta picture {
+		width: 90.0625%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#cta picture:before {
+		content: '';
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: 0.7;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+	body.dark-mode #cta:after {
+		display: none;
+	}
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cta-262 {
+		padding: var(--sectionPadding);
+		padding-top: 0;
+		background-color: #f7f7f7;
+	}
+	#cta-262 .cs-container {
+		width: 100%;
+		max-width: 80rem;
+		margin: auto;
+		/* 32px - 88px top & bottom */
+		/* 24px - 88px left & right */
+		padding: clamp(2em, 6.3vw, 5.5em) clamp(1.5em, 5.7vw, 5.5em);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 2rem;
+		position: relative;
+		/* clips the corners for the border radius to show */
+		overflow: hidden;
+		z-index: 1;
+		/* prevents padding from adding to height and width */
+		box-sizing: border-box;
+	}
+	#cta-262 .cs-background {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		z-index: -1;
+	}
+	#cta-262 .cs-background:before {
+		/* black overlay */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.7;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	#cta-262 .cs-background:after {
+		/* brown overlay */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: var(--secondary);
+		opacity: 0.2;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	#cta-262 .cs-background img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	#cta-262 .cs-left-section {
+		max-width: 27.125rem;
+	}
+	#cta-262 .cs-title {
+		/* 25px - 49px */
+		font-size: clamp(1.5625rem, 3.9vw, 3.0625rem);
+		font-weight: 900;
+		line-height: 1.2em;
+		text-align: left;
+		max-width: 15ch;
+		/* 20px - 48px */
+		margin: 0 auto clamp(1.25rem, 4.7vw, 3rem);
+		color: var(--bodyTextColorWhite);
+		position: relative;
+	}
+	#cta-262 .cs-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		/* 12px - 20px */
+		gap: clamp(0.75rem, 1.6vw, 1.25rem);
+	}
+	#cta-262 .cs-header {
+		/* 20px - 25px */
+		font-size: clamp(1.25rem, 2.4vw, 1.5625rem);
+		font-weight: bold;
+		color: var(--bodyTextColorWhite);
+		display: block;
+	}
+	#cta-262 .cs-p {
+		/* 14px - 20px */
+		font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+		line-height: 1.5em;
+		margin: 0;
+		color: var(--bodyTextColorWhite);
+	}
+	#cta-262 .cs-button-solid {
+		transition: color 0.3s;
+	}
+	#cta-262 .cs-button-solid:hover {
+		color: var(--primary);
+	}
+	#cta-262 .cs-button-solid:before {
+		background-color: #fff;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cta-262 .cs-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#cta-262 .cs-content {
+		align-items: flex-end;
+		text-align: right;
+		/* prevents flexbox from squishing it */
+		flex: none;
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #cta-262 {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	body.dark-mode #cta-262 .cs-background:before {
+		opacity: 0.9;
+	}
+	body.dark-mode #cta-262 .cs-background:after {
+		opacity: 0.1;
+	}
+}

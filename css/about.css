@@ -1,0 +1,727 @@
+/*-- -------------------------- -->
+<---    Emergency Services      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#sbs-317 {
+		padding: var(--sectionPadding);
+		background-color: #f7f7f7;
+	}
+	#sbs-317 .cs-container {
+		width: 100%;
+		/* changes to 1280px at desktop */
+		max-width: 34.375rem;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		/* 48px - 64px */
+		gap: clamp(3rem, 6vw, 4rem);
+	}
+	#sbs-317 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: left;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: flex-start;
+	}
+	#sbs-317 .cs-text {
+		/* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+		margin-bottom: 1rem;
+	}
+	#sbs-317 .cs-text:last-of-type {
+		margin-bottom: 2rem;
+	}
+	#sbs-317 .cs-picture {
+		/* set font size to scale with view width, stopping at 68% the value of em */
+		font-size: min(2.16vw, 0.68em);
+		width: 32.5em;
+		height: 42.5em;
+		/* margin top and bottom to match the exact amount the grey square overflows the parent for consistent spacing */
+		margin: 3em 0;
+		position: relative;
+		display: block;
+	}
+	#sbs-317 .cs-picture:before {
+		/* grey box */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #bababa;
+		opacity: 1;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		transform: rotate(15deg);
+	}
+	#sbs-317 .cs-picture img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+	#sbs-317 .cs-container {
+		max-width: 80rem;
+		/* set to horizontal arrangement */
+		flex-direction: row;
+		justify-content: center;
+		/* 77px - 160px */
+		gap: clamp(4.8125rem, 11vw, 10rem);
+	}
+	#sbs-317 .cs-content {
+		text-align: left;
+		align-items: flex-start;
+	}
+	#sbs-317 .cs-picture {
+		font-size: min(1.1vw, 1em);
+		margin: 3.5em 0 3.5em 5em;
+		/* prevent flexbox from squishing it */
+		flex: none;
+	}
+	#sbs-317 .cs-circles {
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#sbs-317 .cs-ring-wrapper {
+		/* breaks the children out of the container.  They can now be arrnaged as if thy are all children of the cs-circle */
+		display: contents;
+	}
+	#sbs-317 .cs-ring {
+		/* make the ring position absolute so it can sit on top of the other elements that are centered relatively in the cs-circle */
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#sbs-317 .cs-number {
+		/* make the number relative positioning so it and the cs-desc can position themselves around each other */
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+	}
+	#sbs-317 .cs-desc {
+		position: relative;
+		bottom: auto;
+		left: auto;
+		transform: none;
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #sbs-317 {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	body.dark-mode #sbs-317 .cs-picture:before,
+	body.dark-mode #sbs-317 .cs-picture:after {
+		background: var(--accent);
+	}
+	body.dark-mode #sbs-317 .cs-title,
+	body.dark-mode #sbs-317 .cs-text,
+	body.dark-mode #sbs-317 .cs-call,
+	body.dark-mode #sbs-317 .cs-number,
+	body.dark-mode #sbs-317 .cs-desc {
+		color: var(--bodyTextColorWhite);
+	}
+	body.dark-mode #sbs-317 .cs-text {
+		opacity: 0.8;
+	}
+}
+/*-- -------------------------- -->
+<---           Stats            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#stats-479 {
+		padding: var(--sectionPadding);
+		background-color: var(--headerColor);
+		/* clips the glowing orbs from causing overflow issues when they overflow the container */
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+	#stats-479:before,
+	#stats-479:after {
+		/* glowing orbs */
+		content: '';
+		width: 28.3125rem;
+		height: 20.8125rem;
+		background: #f1f1f4;
+		opacity: 0.16;
+		-webkit-filter: blur(182px);
+		filter: blur(182px);
+		position: absolute;
+		display: block;
+		top: -4.125rem;
+		left: -14.1875rem;
+		z-index: -1;
+	}
+	#stats-479:after {
+		display: none;
+	}
+	#stats-479 .cs-container {
+		width: 100%;
+		max-width: 59.6875em;
+		margin: auto;
+	}
+	#stats-479 .cs-card-group {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 3.75rem;
+	}
+	#stats-479 .cs-item {
+		list-style: none;
+		width: 47%;
+		max-width: 15rem;
+		margin: 0;
+		padding: 0 0.75rem;
+		/* prevents padding from affecting height and width */
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#stats-479 .cs-icon {
+		/* 50px - 76px */
+		width: clamp(3.125rem, 6vw, 4.75rem);
+		height: auto;
+		margin: 0 0 1.25rem;
+		display: block;
+	}
+	#stats-479 .cs-number {
+		font-family: 'font2', Impact, monospace;
+		letter-spacing: 0.1em;
+		/* 31px - 61px */
+		font-size: clamp(1.9375rem, 4.3vw, 3.8125rem);
+		line-height: 1.2em;
+		text-align: center;
+		font-weight: 700;
+		margin: 0 0 0.25rem 0;
+		color: var(--bodyTextColorWhite);
+	}
+	#stats-479 .cs-desc {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.15rem);
+		line-height: 1.5em;
+		text-align: center;
+		width: 100%;
+		color: var(--bodyTextColorWhite);
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#stats-479:after {
+		display: block;
+		left: auto;
+		top: 3.5625rem;
+		right: -17.5625rem;
+	}
+	#stats-479 .cs-card-group {
+		justify-content: space-between;
+	}
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#services-479 {
+		padding: var(--sectionPadding);
+		/* 60px - 200px */
+		padding-top: clamp(3.75em, 11vw, 12.5em);
+		/* clips the cs-background section so it doesn't cause any overflow issues when it breaks the container */
+		overflow: hidden;
+	}
+	#services-479 .cs-container {
+		width: 100%;
+		max-width: 80em;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#services-479 .cs-right-section {
+		max-width: 52.75rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* 88px - 118px */
+		gap: clamp(5.5rem, 10vw, 7.375rem);
+	}
+	#services-479 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: center;
+	}
+	#services-479 .cs-title {
+		/* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+		max-width: 30ch;
+	}
+	#services-479 .cs-card-group {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		/* resets to a clamp at tablet */
+		gap: 3.625rem;
+	}
+	#services-479 .cs-item {
+		list-style: none;
+		width: 100%;
+		/* 24px - 60px left & right */
+		padding: 0 clamp(1.5rem, 2vw, 3.75rem) 2.5rem;
+		border: 1px solid #b4b2c7;
+		box-shadow: 0px 24px 54px rgba(0, 0, 0, 0.12);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		transition: border-color 0.3s;
+	}
+	#services-479 .cs-item:hover {
+		border-color: var(--primary);
+	}
+	#services-479 .cs-item:hover .cs-icon-wrap {
+		transform: scale(1.1);
+	}
+	#services-479 .cs-item:hover:before {
+		opacity: 1;
+	}
+	#services-479 .cs-item:before {
+		/* green border box on hover */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: transparent;
+		/* prevent border from affecting height and width */
+		box-sizing: border-box;
+		border: 3px solid var(--primary);
+		/* prevents the mouse from interacting with it */
+		pointer-events: none;
+		opacity: 0;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		transition: opacity 0.3s;
+	}
+	#services-479 .cs-icon-wrap {
+		/* 60px - 110px */
+		width: clamp(3.75rem, 7vw, 6.875rem);
+		height: clamp(3.75rem, 7vw, 6.875rem);
+		/* wrapped in a calc funtion to multiple the clamp by a negative number to make its value negative, and multiple it by .5 so it pulls itself by half the height of itself. We copy and pasted the same height clamp. These must be equal everytime */
+		margin-top: calc(clamp(3.75rem, 7vw, 6.875rem) * -0.5);
+		/* 30px - 40px */
+		margin-bottom: clamp(1.875rem, 5vw, 2.5rem);
+		background-color: #fff;
+		border: 2px solid #b4b2c7;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		/* places it above the hover border box */
+		z-index: 10;
+		transition: transform 0.3s;
+	}
+	#services-479 .cs-icon {
+		/* 32px - 56px */
+		width: clamp(2rem, 5vw, 3.5rem);
+		height: auto;
+		display: block;
+	}
+	#services-479 .cs-h3 {
+		/* 20px - 31px */
+		font-size: clamp(1.25rem, 2vw, 1.9375rem);
+		line-height: 1.2em;
+		font-weight: 700;
+		margin: 0 0 0.75rem 0;
+		color: var(--headerColor);
+	}
+	#services-479 .cs-item-text {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 1.5vw, 1rem);
+		line-height: 1.5em;
+		font-weight: 400;
+		text-align: center;
+		/* 12px - 32px */
+		margin: 0 0 clamp(0.75rem, 3vw, 2rem);
+		color: var(--bodyTextColor);
+	}
+	#services-479 .cs-link {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		line-height: 1.5em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: auto 0 0 0;
+		color: var(--primary);
+		position: relative;
+		display: block;
+	}
+	#services-479 .cs-link:hover:before {
+		width: 100%;
+	}
+	#services-479 .cs-link:before {
+		/* green underline on hover */
+		content: '';
+		width: 0%;
+		height: 2px;
+		background: currentColor;
+		opacity: 1;
+		position: absolute;
+		display: block;
+		bottom: -2px;
+		left: 0;
+		transition: width 0.3s;
+	}
+	#services-479 .cs-left-section {
+		/* changes at tablet */
+		width: 100%;
+		/* 48px - 64px, removed at tablet */
+		margin-bottom: clamp(3rem, 6vw, 4rem);
+		/* removed at tablet */
+		padding-top: 12.75rem;
+		/* 24px - 40px */
+		padding-bottom: clamp(1.5rem, 7vw, 2.5rem);
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		position: relative;
+	}
+	#services-479 .cs-background {
+		/* width and height set in vw units so the grow as the screen grows.  We go over 100vw so they are long enough push outside the cs-container, passed the section padding, and off screen to mimic the lok in the design, they are reset at tablet */
+		width: 120vw;
+		height: 100vw;
+		/* clips the gradient pseudo and img tag corner */
+		overflow: hidden;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+	}
+	#services-479 .cs-background:before {
+		/* green gradient at the bottom */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			360deg,
+			#000000 0%,
+			rgba(0, 0, 0, 0) 67.27%
+		);
+		-webkit-filter: drop-shadow(0px 24px 54px rgba(0, 0, 0, 0.12));
+		filter: drop-shadow(0px 24px 54px rgba(0, 0, 0, 0.12));
+		opacity: 1;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+	#services-479 .cs-background img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		/* makes image act like a background image */
+		object-fit: cover;
+	}
+	#services-479 .cs-cta {
+		text-decoration: none;
+		margin-left: 3rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		/* 12px - 24px */
+		gap: clamp(0.75rem, 2vw, 1.5rem);
+	}
+	#services-479 .cs-cta:hover .cs-arrow-wrap {
+		transform: scale(1.2);
+	}
+	#services-479 .cs-arrow-wrap {
+		/* 40px - 70px */
+		width: clamp(2.5rem, 6vw, 4.375rem);
+		height: clamp(2.5rem, 6vw, 4.375rem);
+		background: rgba(217, 217, 217, 0.3);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: transform 0.3s;
+	}
+	#services-479 .cs-arrow {
+		width: 1.125rem;
+		height: auto;
+		display: block;
+	}
+	#services-479 .cs-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	#services-479 .cs-tag {
+		font-family: 'font2', Impact, monospace;
+		letter-spacing: 0.1em;
+		/* 20px - 31px */
+		font-size: clamp(1.25rem, 2.5vw, 1.9375rem);
+		line-height: 1.2em;
+		font-weight: 700;
+		text-align: left;
+		margin: 0 0 0.25rem 0;
+		color: #fff;
+		display: block;
+	}
+	#services-479 .cs-desc {
+		/* 14px - 25px */
+		font-size: clamp(0.875rem, 2vw, 1.5625rem);
+		line-height: 1.2em;
+		font-weight: 400;
+		text-align: center;
+		margin: 0 0 0.25rem 0;
+		color: #fff;
+		display: block;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#services-479 .cs-container {
+		flex-direction: row;
+		align-items: stretch;
+		justify-content: space-between;
+		/* 60px - 130px */
+		gap: clamp(3.75rem, 9vw, 8.125rem);
+	}
+	#services-479 .cs-left-section {
+		width: 80%;
+		margin: 0;
+		padding-top: 0;
+		justify-content: flex-start;
+		/* pushes to the right side of the container */
+		order: 2;
+	}
+	#services-479 .cs-background {
+		width: 40vw;
+		height: calc(135%);
+	}
+	#services-479 .cs-right-section {
+		width: 55vw;
+		/* prevents flexbox from squshing it */
+		flex: none;
+	}
+	#services-479 .cs-cta {
+		margin-left: 0;
+		/* we need this link to break outside the cs-container, so we set a negative clamp value to translate left on the x axis as the screen gorws, slowly pulling it farther and farther left outside the cs-container to match the designs posiiton */
+		/* 24px - 100px */
+		transform: translateX(clamp(1.5rem, 5vw, 6.25rem));
+	}
+	#services-479 .cs-info {
+		/* prevents flex-box from squishing it */
+		flex: none;
+	}
+	#services-479 .cs-arrow-wrap {
+		/* prevents flexbox from squishing it */
+		flex: none;
+	}
+	#services-479 .cs-card-group {
+		flex-direction: row;
+		/* 16px - 20px */
+		gap: clamp(1rem, 1.3vw, 1.25rem);
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #services-479 .cs-title,
+	body.dark-mode #services-479 .cs-text,
+	body.dark-mode #services-479 .cs-h3,
+	body.dark-mode #services-479 .cs-item-text {
+		color: var(--bodyTextColorWhite);
+	}
+	body.dark-mode #services-479 .cs-icon-wrap {
+		background-color: var(--medium);
+		border-color: #b4b2c7;
+	}
+	body.dark-mode #services-479 .cs-icon {
+		/* turns the icon white */
+		-webkit-filter: grayscale(1) brightness(1000%);
+		filter: grayscale(1) brightness(1000%);
+	}
+	body.dark-mode #services-479 .cs-item-text {
+		opacity: 0.8;
+	}
+	body.dark-mode #stats-479 {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+	body.dark-mode #stats-479:before,
+	body.dark-mode #stats-479:after {
+		opacity: 0.05;
+	}
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cta-262 {
+		padding: var(--sectionPadding);
+		padding-top: 0;
+		background-color: #f7f7f7;
+	}
+	#cta-262 .cs-container {
+		width: 100%;
+		max-width: 80rem;
+		margin: auto;
+		/* 32px - 88px top & bottom */
+		/* 24px - 88px left & right */
+		padding: clamp(2em, 6.3vw, 5.5em) clamp(1.5em, 5.7vw, 5.5em);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 2rem;
+		position: relative;
+		/* clips the corners for the border radius to show */
+		overflow: hidden;
+		z-index: 1;
+		/* prevents padding from adding to height and width */
+		box-sizing: border-box;
+	}
+	#cta-262 .cs-background {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		z-index: -1;
+	}
+	#cta-262 .cs-background:before {
+		/* black overlay */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.7;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	#cta-262 .cs-background:after {
+		/* brown overlay */
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: var(--secondary);
+		opacity: 0.2;
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	#cta-262 .cs-background img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	#cta-262 .cs-left-section {
+		max-width: 27.125rem;
+	}
+	#cta-262 .cs-title {
+		/* 25px - 49px */
+		font-size: clamp(1.5625rem, 3.9vw, 3.0625rem);
+		font-weight: 900;
+		line-height: 1.2em;
+		text-align: left;
+		max-width: 15ch;
+		/* 20px - 48px */
+		margin: 0 auto clamp(1.25rem, 4.7vw, 3rem);
+		color: var(--bodyTextColorWhite);
+		position: relative;
+	}
+	#cta-262 .cs-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		/* 12px - 20px */
+		gap: clamp(0.75rem, 1.6vw, 1.25rem);
+	}
+	#cta-262 .cs-header {
+		/* 20px - 25px */
+		font-size: clamp(1.25rem, 2.4vw, 1.5625rem);
+		font-weight: bold;
+		color: var(--bodyTextColorWhite);
+		display: block;
+	}
+	#cta-262 .cs-p {
+		/* 14px - 20px */
+		font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+		line-height: 1.5em;
+		margin: 0;
+		color: var(--bodyTextColorWhite);
+	}
+	#cta-262 .cs-button-solid {
+		transition: color 0.3s;
+	}
+	#cta-262 .cs-button-solid:hover {
+		color: var(--primary);
+	}
+	#cta-262 .cs-button-solid:before {
+		background-color: #fff;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cta-262 .cs-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#cta-262 .cs-content {
+		align-items: flex-end;
+		text-align: right;
+		/* prevents flexbox from squishing it */
+		flex: none;
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #cta-262 {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	body.dark-mode #cta-262 .cs-background:before {
+		opacity: 0.9;
+	}
+	body.dark-mode #cta-262 .cs-background:after {
+		opacity: 0.1;
+	}
+}

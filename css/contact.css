@@ -1,0 +1,202 @@
+/*-- -------------------------- -->
+<---           Form             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+	#cs-contact-486 {
+		padding: var(--sectionPadding);
+		position: relative;
+		z-index: 1;
+	}
+	#cs-contact-486 .cs-container {
+		width: 100%;
+		/* changes to 1440px at tablet */
+		max-width: 34.375em;
+		margin: auto;
+		/* 20px - 80px */
+		padding: clamp(1.25rem, 5.5vw, 5rem);
+		/* prevents padding from affecting height and width */
+		box-sizing: border-box;
+		background-color: #1a1a1a;
+		/* clips the glowing orb */
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		position: relative;
+		z-index: 1;
+	}
+	#cs-contact-486 .cs-container:before {
+		/* glowing orb */
+		content: '';
+		width: 77.5rem;
+		height: 7.625rem;
+		background: #f1f1f4;
+		opacity: 0.21;
+		-webkit-filter: blur(152px);
+		filter: blur(152px);
+		transform: translateX(-50%) rotate(-38.5deg);
+		position: absolute;
+		display: block;
+		top: 30%;
+		left: 50%;
+		z-index: -1;
+	}
+	#cs-contact-486 .cs-content {
+		/* set text align to left if content needs to be left aligned */
+		text-align: left;
+		width: 100%;
+		max-width: 36.75rem;
+		display: flex;
+		flex-direction: column;
+		/* centers content horizontally, set to flex-start to left align */
+		align-items: flex-start;
+	}
+	#cs-contact-486 .cs-title {
+		/* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+		max-width: 25ch;
+		color: var(--bodyTextColorWhite);
+	}
+	#cs-contact-486 .cs-color {
+		color: var(--primary);
+	}
+	#cs-contact-486 .cs-text {
+		/* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 1.5vw, 1rem);
+		/* 24px - 36px, matches the padding-bottom */
+		margin: 0 0 clamp(1.5rem, 4vw, 2.25rem) 0;
+		/* 24px - 36px */
+		padding-bottom: clamp(1.5rem, 4vw, 2.25rem);
+		color: #fff;
+		opacity: 0.8;
+		position: relative;
+	}
+	#cs-contact-486 .cs-text:before {
+		/* dashed border effect, by using this method we can control the width of the dashed lines */
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-image: linear-gradient(
+			90deg,
+			#b3bac5,
+			#b3bac5 50%,
+			transparent 50%,
+			transparent 0%
+		);
+		/* change the first left rem value to change the length of the dashes */
+		background-size: 0.6rem 1px;
+		opacity: 1;
+		position: absolute;
+		display: block;
+		bottom: 0;
+		left: 0;
+	}
+	#cs-contact-486 .cs-heading {
+		/* 16px - 20px */
+		font-size: clamp(1rem, 2vw, 1.25rem);
+		line-height: 1.5em;
+		font-weight: 700;
+		text-align: left;
+		color: var(--bodyTextColorWhite);
+		display: block;
+	}
+	#cs-contact-486 .cs-heading:last-of-type {
+		/* make the last one have the margin bottom to create the space between the contact info */
+		margin-bottom: 0.75rem;
+	}
+	#cs-contact-486 .cs-link {
+		/* 14px - 16px */
+		font-size: clamp(0.875rem, 1.5vw, 1rem);
+		line-height: 1.5em;
+		font-weight: 400;
+		text-align: left;
+		text-decoration: none;
+		margin: 0;
+		color: #fff;
+		opacity: 0.8;
+		display: block;
+	}
+	#cs-contact-486 #cs-form-486 {
+		width: 100%;
+		max-width: 38.625rem;
+		padding: 1.5rem clamp(1rem, 1.5vw, 1.5rem);
+		background-color: #fff;
+		/* prevents padding from affecting height and width */
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 1.25rem;
+	}
+	#cs-contact-486 .cs-h3 {
+		/* 20px - 31px */
+		font-size: clamp(1.25rem, 4vw, 1.9375rem);
+		line-height: 1.2em;
+		font-weight: 700;
+		text-align: left;
+		width: 100%;
+		/* 4px + the 20px gap on the #cs-form */
+		margin: 0 0 0.25rem 0;
+		color: #14142b;
+	}
+	#cs-contact-486 .cs-label {
+		font-size: 1rem;
+		line-height: 1.5em;
+		width: 100%;
+		margin: 0 0 0.375rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		color: #14142b;
+	}
+	#cs-contact-486 .cs-input,
+	#cs-contact-486 .cs-textarea,
+	#cs-contact-486 #cs-select-486 {
+		font-size: 1rem;
+		font-family: 'font1', Arial, monospace;
+		width: 100%;
+		height: 3rem;
+		margin: 0;
+		padding: 0 1.25rem;
+		/* prevents padding from affecting width and height */
+		box-sizing: border-box;
+		border: 1px solid #b4b2c7;
+		background-color: transparent;
+	}
+	#cs-contact-486 .cs-input::placeholder,
+	#cs-contact-486 .cs-textarea::placeholder,
+	#cs-contact-486 #cs-select-486::placeholder {
+		color: #7d799c;
+		font-size: 1rem;
+	}
+	#cs-contact-486 .cs-textarea {
+		min-height: 9.375rem;
+		padding-top: 0.625rem;
+	}
+	#cs-contact-486 .cs-button-solid {
+		/* button override */
+		width: 100%;
+		border: none;
+	}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+	#cs-contact-486 .cs-container {
+		max-width: 90rem;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#cs-contact-486 .cs-label:nth-of-type(1),
+	#cs-contact-486 .cs-label:nth-of-type(2) {
+		width: clamp(45%, 17vw, 48.5%);
+	}
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+	body.dark-mode #cs-contact-486 .cs-container {
+		background-color: var(--medium);
+	}
+}
