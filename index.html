@@ -32,30 +32,32 @@
 		/>
 
 		<!--Favicons-->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="/assets/favicons/apple-touch-icon.png"
+			href="/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="/assets/favicons/favicon-32x32.png?v1"
+			href="/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="/assets/favicons/favicon-16x16.png"
+			href="/favicon-16x16.png"
 		/>
-		<link rel="manifest" href="/assets/favicons/site.webmanifest" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="theme-color" content="#ffffff" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#81a7d0" />
+		<meta name="msapplication-TileColor" content="#2b5797" />
+		<meta name="theme-color" content="#81a7d0" />
 
 		<!-- Preload -->
 
-		<link rel="preload" as="image" href="assets/images/logo.webp" />
+		<link rel="preload" as="image" href="assets/images/logo.png" />
 		<link
 			rel="preload"
 			as="font"
@@ -79,8 +81,7 @@
 		<!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
 		<title
-			>Air Conditioning Contractors | Family Air LLC | Central
-			Florida</title
+			>Air Conditioning Service | Family Air LLC | Central Florida</title
 		>
 	</head>
 	<body>
@@ -97,7 +98,7 @@
 			<!--Nav Logo-->
 			<a href="/" class="cs-logo" aria-label="back to home">
 				<img
-					src="/assets/images/logo.webp"
+					src="/assets/images/logo.png"
 					alt="logo"
 					width="210"
 					height="29"
@@ -111,7 +112,7 @@
 					<picture class="cs-picture">
 						<img
 							class="cs-icon"
-							src="/assets/icons/optimized/phone.svg"
+							src="/assets/icons/phone.svg"
 							alt="icon"
 							width="24"
 							height="24"
@@ -149,7 +150,7 @@
 					<picture class="cs-picture">
 						<img
 							class="cs-icon"
-							src="assets/icons/location.svg"
+							src="assets/icons/facebook-hollow.svg"
 							alt="icon"
 							width="24"
 							height="24"
@@ -158,9 +159,11 @@
 						/>
 					</picture>
 					<div class="cs-flex">
-						<span class="cs-header">Location</span>
-						<a href="https://goo.gl/maps" class="cs-link"
-							>Central Florida</a
+						<span class="cs-header">Facebook</span>
+						<a
+							href="https://www.facebook.com/FamilyAir352/"
+							class="cs-link"
+							>Family Air</a
 						>
 					</div>
 				</li>
@@ -200,50 +203,6 @@
 							<li class="cs-li">
 								<a href="/about" class="cs-li-link"> About </a>
 							</li>
-							<li class="cs-li cs-dropdown" tabindex="0">
-								<span class="cs-li-link">
-									Services
-									<img
-										class="cs-drop-icon"
-										src="assets/icons/dropdown.svg"
-										alt="dropdown icon"
-										width="15"
-										height="15"
-										decoding="async"
-										aria-hidden="true"
-									/>
-								</span>
-								<ul class="cs-drop-ul">
-									<li class="cs-drop-li">
-										<a
-											href="/"
-											class="cs-li-link cs-drop-link"
-											>Lorem Ipsum</a
-										>
-									</li>
-									<li class="cs-drop-li">
-										<a
-											href="/"
-											class="cs-li-link cs-drop-link"
-											>Lorem Ipsum</a
-										>
-									</li>
-									<li class="cs-drop-li">
-										<a
-											href="/"
-											class="cs-li-link cs-drop-link"
-											>Lorem Ipsum</a
-										>
-									</li>
-									<li class="cs-drop-li">
-										<a
-											href="/"
-											class="cs-li-link cs-drop-link"
-											>Lorem Ipsum</a
-										>
-									</li>
-								</ul>
-							</li>
 							<li class="cs-li">
 								<a href="/reviews" class="cs-li-link">
 									Reviews
@@ -278,16 +237,16 @@
 								<ul class="cs-drop-ul">
 									<li class="cs-drop-li">
 										<a
-											href="/ac-in-ocala"
+											href="/ac-service-in-tampa-fl"
 											class="cs-li-link cs-drop-link"
-											>Repairmen In Ocala</a
+											>AC Service In Tampa</a
 										>
 									</li>
 									<li class="cs-drop-li">
 										<a
-											href="/ac-in-tampa"
+											href="/ac-service-in-ocala-fl"
 											class="cs-li-link cs-drop-link"
-											>Repairmen In Tampa</a
+											>AC Service In Ocala</a
 										>
 									</li>
 								</ul>
@@ -343,7 +302,7 @@ block
 			<link
 				rel="preload"
 				as="image"
-				href="assets/images/landing-m.webp"
+				href="assets/images/familyair-truck-m.webp"
 			/>
 
 			<link rel="stylesheet" href="/css/critical.css" />
@@ -398,16 +357,16 @@ block
 					<picture class="cs-picture">
 						<source
 							media="(max-width: 600px)"
-							srcset="/assets/images/familyair_truck.jpg"
+							srcset="/assets/images/familyair-truck-m.webp"
 						/>
 						<source
 							media="(min-width: 601px)"
-							srcset="/assets/images/familyair_truck.jpg"
+							srcset="/assets/images/familyair-truck.webp"
 						/>
 						<img
 							aria-hidden="true"
 							decoding="async"
-							src="/assets/images/familyair_truck.jpg"
+							src="/assets/images/familyair-truck.webp"
 							alt="Family Air Truck"
 							width="630"
 							height="814"
@@ -495,16 +454,18 @@ block
 							<picture class="cs-image" aria-hidden="true">
 								<source
 									media="(max-width: 600px)"
-									srcset="assets/images/curved_landscape.jpg"
+									srcset="
+										assets/images/curved-landscape-m.webp
+									"
 								/>
 								<source
 									media="(min-width: 601px)"
-									srcset="assets/images/curved_landscape.jpg"
+									srcset="assets/images/curved-landscape.webp"
 								/>
 								<img
 									loading="lazy"
 									decoding="async"
-									src="assets/images/curved_landscape.jpg"
+									src="assets/images/curved-landscape.webp"
 									alt="library"
 									width="345"
 									height="302"
@@ -535,16 +496,16 @@ block
 							<picture class="cs-image" aria-hidden="true">
 								<source
 									media="(max-width: 600px)"
-									srcset="assets/images/ceiling_unit.jpg"
+									srcset="assets/images/ceiling-unit-m.webp"
 								/>
 								<source
 									media="(min-width: 601px)"
-									srcset="assets/images/ceiling_unit.jpg"
+									srcset="assets/images/ceiling-unit.webp"
 								/>
 								<img
 									loading="lazy"
 									decoding="async"
-									src="assets/images/ceiling_unit.jpg"
+									src="assets/images/ceiling-unit.webp"
 									alt="library"
 									width="345"
 									height="302"
@@ -575,16 +536,16 @@ block
 							<picture class="cs-image" aria-hidden="true">
 								<source
 									media="(max-width: 600px)"
-									srcset="assets/images/triangle_beams.jpg"
+									srcset="assets/images/triangle_beams-m.webp"
 								/>
 								<source
 									media="(min-width: 601px)"
-									srcset="assets/images/triangle_beams.jpg"
+									srcset="assets/images/triangle_beams.webp"
 								/>
 								<img
 									loading="lazy"
 									decoding="async"
-									src="assets/images/triangle_beams.jpg"
+									src="assets/images/triangle_beams.webp"
 									alt="library"
 									width="345"
 									height="302"
@@ -617,7 +578,7 @@ block
 							<picture class="cs-image" aria-hidden="true">
 								<source
 									media="(max-width: 600px)"
-									srcset="assets/images/shaking-hands.webp"
+									srcset="assets/images/shaking-hands-m.webp"
 								/>
 								<source
 									media="(min-width: 601px)"
@@ -648,16 +609,16 @@ block
 					<picture class="cs-picture">
 						<source
 							media="(max-width: 600px)"
-							srcset="/assets/images/three_units_cropped.jpg"
+							srcset="/assets/images/featured-service-m.webp"
 						/>
 						<source
 							media="(min-width: 601px)"
-							srcset="/assets/images/three_units_cropped.jpg"
+							srcset="/assets/images/featured-service.webp"
 						/>
 						<img
 							loading="lazy"
 							decoding="async"
-							src="/assets/images/three_units_cropped.jpg"
+							src="/assets/images/featured-service.webp"
 							alt="three ac units"
 							width="520"
 							height="680"
@@ -725,7 +686,7 @@ block
 									class="cs-icon"
 									loading="lazy"
 									decoding="async"
-									src="assets/icons/unfinished/s5.svg"
+									src="assets/icons/people-stars.svg"
 									alt="heart icon"
 									width="38"
 									height="38"
@@ -744,7 +705,7 @@ block
 									class="cs-icon"
 									loading="lazy"
 									decoding="async"
-									src="assets/icons/unfinished/s6.svg"
+									src="assets/icons/star-medal.svg"
 									alt="toolbox icon"
 									width="38"
 									height="38"
@@ -763,7 +724,7 @@ block
 									class="cs-icon"
 									loading="lazy"
 									decoding="async"
-									src="assets/icons/unfinished/s7.svg"
+									src="assets/icons/piggy.svg"
 									alt="ribbon icon"
 									width="38"
 									height="38"
@@ -782,7 +743,7 @@ block
 									class="cs-icon"
 									loading="lazy"
 									decoding="async"
-									src="assets/icons/unfinished/s8.svg"
+									src="assets/icons/checked-doc.svg"
 									alt="ribbon icon"
 									width="38"
 									height="38"
@@ -802,17 +763,17 @@ block
 					<!--Mobile Image-->
 					<source
 						media="(max-width: 600px)"
-						srcset="assets/images/father_son.jpg"
+						srcset="assets/images/experience-m.webp"
 					/>
 					<!--Tablet and above Image-->
 					<source
 						media="(min-width: 601px)"
-						srcset="assets/images/father_son.jpg"
+						srcset="assets/images/experience.webp"
 					/>
 					<img
 						loading="lazy"
 						decoding="async"
-						src="assets/images/father_son.jpg"
+						src="assets/images/experience.webp"
 						alt="neighborhood"
 						width="1280"
 						height="568"
@@ -836,7 +797,7 @@ block
 							<picture class="cs-box-picture">
 								<source
 									media="(max-width: 600px)"
-									srcset="assets/images/air-filter.webp"
+									srcset="assets/images/air-filter-m.webp"
 								/>
 								<source
 									media="(min-width: 601px)"
@@ -857,16 +818,16 @@ block
 						<picture class="cs-picture">
 							<source
 								media="(max-width: 600px)"
-								srcset="assets/images/black-white-ac.jpg"
+								srcset="assets/images/father_son-m.webp"
 							/>
 							<source
 								media="(min-width: 601px)"
-								srcset="assets/images/black-white-ac.jpg"
+								srcset="assets/images/father_son.webp"
 							/>
 							<img
 								loading="lazy"
 								decoding="async"
-								src="assets/images/black-white-ac.jpg"
+								src="assets/images/father_son.webp"
 								alt="kitchen remodel"
 								width="521"
 								height="672"
@@ -1164,7 +1125,7 @@ block
 					<div class="cs-logo-wrapper">
 						<a href="/" class="cs-logo" aria-label="back to home">
 							<img
-								src="/assets/images/logo.webp"
+								src="/assets/images/logo.png"
 								alt="logo"
 								aria-hidden="true"
 								loading="lazy"
@@ -1180,33 +1141,14 @@ block
 								<span class="cs-header">Quick Links</span>
 							</li>
 							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
+								<a href="/" class="cs-link"
+									>AC Service in Tampa</a
+								>
 							</li>
 							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-						</ul>
-						<ul class="cs-ul">
-							<li class="cs-li">
-								<span class="cs-header">Services</span>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
-							</li>
-							<li class="cs-li">
-								<a href="/" class="cs-link">Lorem Ipsum</a>
+								<a href="/" class="cs-link"
+									>AC Service in Ocala</a
+								>
 							</li>
 						</ul>
 						<ul class="cs-ul cs-contact-ul">
@@ -1217,7 +1159,7 @@ block
 								<a href="tel:813-318-2587" class="cs-link">
 									<img
 										class="cs-icon"
-										src="https://d33wubrfki0l68.cloudfront.net/c1cfbe976d616f7b9ef0e8624601e512b2e8d082/6692f/assets/images/phone-stroke.svg"
+										src="assets/icons/phone.svg"
 										alt="icon"
 										loading="lazy"
 										decoding="async"
@@ -1235,7 +1177,7 @@ block
 								>
 									<img
 										class="cs-icon"
-										src="https://d33wubrfki0l68.cloudfront.net/e6a6f6485c11e0a54e57b163cf955dadef981bde/c0825/assets/images/mail-stroke.svg"
+										src="assets/icons/mail.svg"
 										alt="icon"
 										loading="lazy"
 										decoding="async"
@@ -1248,14 +1190,14 @@ block
 							</li>
 							<li class="cs-li">
 								<a
-									href="https://goo.gl/maps/"
+									href="https://www.facebook.com/FamilyAir352/"
 									class="cs-link"
 									target="_blank"
 									rel="noopener"
 								>
 									<img
 										class="cs-icon"
-										src="https://d33wubrfki0l68.cloudfront.net/031a45ce3d2104e44dfa82761a91b4c44a28f8d3/c2fbe/assets/images/pin-stroke.svg"
+										src="assets/icons/facebook-hollow.svg"
 										alt="icon"
 										loading="lazy"
 										decoding="async"
@@ -1263,7 +1205,7 @@ block
 										height="24"
 										aria-hidden="true"
 									/>
-									Central Florida
+									Facebook
 								</a>
 							</li>
 						</ul>
