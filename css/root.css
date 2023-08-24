@@ -74,7 +74,7 @@
 		font-family: 'Cardo';
 		font-style: italic;
 		font-weight: 400;
-		src: url('/assets/fontscardo-v19-latin-italic.woff2') format('woff2');
+		src: url('/assets/fonts/cardo-v19-latin-italic.woff2') format('woff2');
 		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 	}
 	body,
@@ -150,7 +150,7 @@
 		color: var(--bodyTextColor);
 	}
 	.cs-bible-text {
-		font-family: 'Cardo';
+		font-family: 'Cardo', Arial, Helvetica, sans-serif;
 		font-style: italic;
 	}
 	.cs-button-solid {
