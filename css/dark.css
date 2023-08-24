@@ -40,6 +40,9 @@
 	body.dark-mode .cs-button-solid:before {
 		background-color: #fff;
 	}
+	body.dark-mode #cta-697 .cs-button-solid:before {
+		background-color: var(--secondary);
+	}
 	.dark {
 		display: none;
 	}
