@@ -222,16 +222,16 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
-	body.dark-mode #dark-mode-toggle .cs-sun {
+	body.dark-mode #dark-mode-toggle .cs-moon {
 		transform: translate(-50%, -50%);
 		opacity: 1;
 	}
-	body.dark-mode #dark-mode-toggle .cs-moon {
+	body.dark-mode #dark-mode-toggle .cs-sun {
 		transform: translate(-50%, -150%);
 		opacity: 0;
 		fill: #fff;
 	}
-	#cs-navigation.cs-active #dark-mode-toggle .cs-moon {
+	#cs-navigation.cs-active #dark-mode-toggle .cs-sun {
 		fill: #fff;
 	}
 	#dark-mode-toggle {
@@ -257,11 +257,11 @@
 		height: 1.25rem;
 		pointer-events: none;
 	}
-	#dark-mode-toggle .cs-moon {
+	#dark-mode-toggle .cs-sun {
 		z-index: 2;
 		transition: transform 0.3s, opacity 0.3s;
 	}
-	#dark-mode-toggle .cs-sun {
+	#dark-mode-toggle .cs-moon {
 		z-index: 1;
 		transform: translate(-50%, 100%);
 		opacity: 0;
