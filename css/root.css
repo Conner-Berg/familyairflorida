@@ -33,18 +33,6 @@
 		/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
 		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 	}
-	/* montserrat-italic - latin */
-	@font-face {
-		font-display: swap;
-		font-family: 'font1';
-		font-style: italic;
-		font-weight: 400;
-		src: url('/assets/fonts/montserrat-v25-latin-italic.woff2')
-			format('woff2');
-
-		/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-	}
 	/* montserrat-700 - latin */
 	@font-face {
 		font-display: swap;
