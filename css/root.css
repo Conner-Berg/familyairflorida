@@ -283,7 +283,6 @@
 		z-index: 100;
 	}
 	#cs-navigation:after {
-		/* on hover green bar */
 		content: '';
 		width: 40%;
 		max-width: 9.125rem;
@@ -793,7 +792,6 @@
 		visibility: hidden;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 10px 16px;
 		border-bottom: 5px solid var(--primary);
-		/* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
 		position: absolute;
 		top: 100%;
 		z-index: -100;
@@ -1063,7 +1061,7 @@
 		flex: none;
 	}
 	#cs-navigation .cs-li:last-of-type {
-		/* pushes the button to the far roght */
+		/* pushes the button to the far right */
 		margin-left: auto;
 		padding: 0;
 	}
@@ -1258,7 +1256,7 @@
 		max-width: 80rem;
 	}
 	#reviews-607 .cs-card-group {
-		/* we went grid on tablet so that we can have an even spaced section with this design. Flexbox has a hard time making this type of design work with even gaps. */
+		/* grid on tablet for an even spaced section. Flexbox has a hard time making this type of design work with even gaps. */
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -1278,7 +1276,7 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 	#reviews-607 .cs-card-group {
-		/* went back to flexbox for an easier transition to this horizontal layout. We don't have to re-target each cs-item to reset its grid positioning, we can just revert to flexbox and make the layout in less code and hassle */
+		/* went back to flexbox for an easier transition to this horizontal layout. We don't have to re-target each item class to reset its grid positioning, we can just revert to flexbox and make the layout in less code and hassle */
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -1389,14 +1387,10 @@
 		justify-content: center;
 		align-items: center;
 	}
-	#banner-559 .cs-link:last-of-type {
-		/* remove the chevron on the last list item */
-	}
 	#banner-559 .cs-link:last-of-type::after {
 		display: none;
 	}
 	#banner-559 .cs-link:after {
-		/* chevron - added as pseudo to make adding and removing them easier */
 		content: '';
 		width: 1.875rem;
 		height: 0.125rem;
@@ -1502,7 +1496,7 @@
 		flex: none;
 	}
 	#cs-footer-710 .cs-contact-ul {
-		/* we remove the :before animated underline from the contact list and replace it with an underline.  The animated line doesn't work well on this section */
+		/* we remove the :before animated underline from the contact list and replace it with an underline. The animated line doesn't work well on this section */
 		width: 100%;
 		max-width: 100%;
 		gap: 0.75rem;
