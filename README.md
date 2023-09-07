@@ -1,15 +1,16 @@
 <h1>Family Air Florida</h1>
-<hr>
 
-This is the source code for familyairflorida.com
+<div>This is the source code for familyairflorida.com</div>
+
+<br>
 
 <img src="/assets/readme/familyair.png" alt="Family Air Homepage">
 
 <br>
+<hr>
 <br>
 
 <h2>Tech Stack</h2>
-<hr>
 
 Tech Stack is good old HTML, CSS, and JavaScript. I believe frameworks and
 libraries (for static sites like this one) may simplify the developer experience
@@ -24,10 +25,10 @@ don't already provide.
 </span>
 
 <br>
+<hr>
 <br>
 
 <h2>Lighthouse Scores</h2>
-<hr>
 
 <div>
 	The Family Air website scores 100/100 for all benchmarks on both mobile and
@@ -36,11 +37,14 @@ don't already provide.
 <div><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Ffamilyairflorida.com%2F" target="_blank">Click
 		Here</a> to check the live Lighthouse scores.</div>
 
+<br>
+
 <img src="/assets/readme/lighthouse-mobile.png" alt="Mobile Lighthouse Scores">
 
 <img src="/assets/readme/lighthouse-desktop.png" alt="Desktop Lighthouse Scores">
 
 <br>
+<hr>
 <br>
 
 <h2>Code Validation</h2>
@@ -52,5 +56,7 @@ don't already provide.
 </div>
 <div><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ffamilyairflorida.com%2F" target="_blank">Click
 		Here</a> to check the live HTML Validation.</div>
+
+<br>
 
 <img src="/assets/readme/html-validator.png" alt="HTML Validator">
