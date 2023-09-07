@@ -7,16 +7,19 @@
 <img src="/assets/readme/familyair.png" alt="Family Air Homepage">
 
 <br>
-<hr>
 <br>
 
 <h2>Tech Stack</h2>
 
-Tech Stack is good old HTML, CSS, and JavaScript. I believe frameworks and
-libraries (for static sites like this one) may simplify the developer experience
-in the short term, but long term they can add complexity and technical debt.
-That extra overhead doesn't offer any benefits that the core 3 technologies
-don't already provide.
+<div>
+	Tech Stack is good old HTML, CSS, and JavaScript. I believe frameworks and
+	libraries (for static sites like this one) may simplify the developer experience
+	in the short term, but long term they can add complexity and technical debt.
+	That extra overhead doesn't offer any benefits that the core 3 technologies
+	don't already provide.
+</div>
+
+<br>
 
 <span>
 	<img src="/assets/readme/html.svg" alt="HTML" width="150" height="150">
@@ -25,7 +28,6 @@ don't already provide.
 </span>
 
 <br>
-<hr>
 <br>
 
 <h2>Lighthouse Scores</h2>
@@ -44,11 +46,9 @@ don't already provide.
 <img src="/assets/readme/lighthouse-desktop.png" alt="Desktop Lighthouse Scores">
 
 <br>
-<hr>
 <br>
 
 <h2>Code Validation</h2>
-<hr>
 
 <div>
 	HTML Code is completely validated, and has no errors or warnings!
